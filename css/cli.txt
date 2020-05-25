@@ -1,0 +1,5 @@
+NORMAL
+sass css/sass/style.scss:css/style.css
+
+MINIFIED
+sass --style=compressed css/sass/style.scss:css/style.css
