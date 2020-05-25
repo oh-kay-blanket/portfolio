@@ -72,22 +72,22 @@ body {
 
 h1 {
   @extend %heading;
-  font-size: 3.5em;
+  font-size: 3.3em;
 }
 
 h2 {
   @extend %heading;
-  font-size: 2.3em;
+  font-size: 2.4em;
 }
 
 h3 {
   @extend %heading;
-  font-size: 1.8em;
+  font-size: 1.9em;
 }
 
 h4, nav li {
   @extend %heading;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 nav li {
@@ -202,9 +202,8 @@ nav ul {
 }
 
 .front-page__link {
-  min-width: 120px;
-  max-width: 170px;
-  margin: 0px 15px 20px 0px;
+  width: 45%;
+  margin: 0px 5% 20px 0px;
 
   @media (min-width: 600px) {
     .front-page__link {
@@ -214,12 +213,17 @@ nav ul {
 }
 
 // PROJECTS //
+.project-heading {
+  margin-top: 8px; 
+}
+
 .project {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-}
+  margin-bottom: 4px;
 
-.project h4 {
-  margin-right: 5px;
+  h4 {
+    margin-right: 5px;
+  }
 }
