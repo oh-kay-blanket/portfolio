@@ -172,8 +172,8 @@ nav ul li a {
   margin: 0px 5% 20px 0px;
 }
 @media (min-width: 600px) {
-  .front-page__link .front-page__link {
-    max-width: 240px;
+  .front-page__link {
+    max-width: 145px;
   }
 }
 

@@ -206,15 +206,13 @@ nav ul {
   margin: 0px 5% 20px 0px;
 
   @media (min-width: 600px) {
-    .front-page__link {
-      max-width: 240px;
-    }
+      max-width: 145px;
   }
 }
 
 // PROJECTS //
 .project-heading {
-  margin-top: 8px; 
+  margin-top: 8px;
 }
 
 .project {
