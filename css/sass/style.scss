@@ -119,11 +119,11 @@ p {
 
 a {
   text-decoration: none;
-  color: $text-main;
+  color: $link;
 
   &:hover {
     text-decoration: none;
-    color: $link;
+    color: $text-main;
     transition: .15s;
   }
 
@@ -138,12 +138,12 @@ a {
 }
 
 i, .icons a {
-  color: $text-main;
+  color: $link;
   font-size: 2rem;
 }
 
 i:hover {
-  color: $link;
+  color: $text-main;
 }
 
 .svg-inline--fa {
@@ -179,10 +179,11 @@ nav ul {
 
 #role {
   font-weight: 400;
-  // color: $link;
+  color: #ffbeb2;
 }
 
 #location {
+  letter-spacing: 7px;
 }
 
 .icons {
