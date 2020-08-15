@@ -4,7 +4,7 @@
 $text-main: #f8f8f8;
 $text-body: #f8f8f8;
 $text-accent: #f4e1e1;
-$link: #555;
+$link: #5af;
 $background: #9c4b41;
 $font1: 'Montserrat', sans-serif;
 $font2: 'Roboto', sans-serif;
@@ -175,7 +175,7 @@ nav ul {
 }
 
 #name {
-  margin-bottom: -10px;
+  // margin-bottom: -10px;
 }
 
 #role {
@@ -214,6 +214,7 @@ nav ul {
 // PROJECTS //
 .project-heading {
   margin-top: 8px;
+  width: min-content;
 }
 
 .project {

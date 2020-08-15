@@ -8,17 +8,6 @@
 		<link rel="icon" href="img/logoBlack.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="js/movingShadow.js"></script>
-		<script>
-		const settings = {
-		  selector: "#name", // targets class or id
-		  angle: 20, // Sets height of light source. Should be > 10 && < 100
-		  diffusion: 0, // blur-radius
-		  color: "#555", // text-color
-		  type: "shadow" // "shadow", "perspective"
-		}
-
-		movingShadow(settings);
-		</script>
 
 		<meta property="og:title" content="Mr. Plunkett" />
 		<meta property="og:type" content="website" />
@@ -80,3 +69,27 @@
 		</div>
   </body>
 </html>
+
+<script>
+const fixedColor = "#5af";
+const settings = {
+  selector: "h1", // targets class or id
+  type: "shadow", // "shadow", "dropShadow", "perspective"
+  angle: 16, // Sets height of light source. Should be > 10 && < 100
+  diffusion: 0, // blur-radius
+  color: "#7e3d35", // shadow-color
+  xOffset: 7, // X offset value
+  yOffset: 7, // Y offset value
+  fixedShadow: `
+    0px 0px ${fixedColor},
+    1px 1px ${fixedColor},
+    2px 2px ${fixedColor},
+    3px 3px ${fixedColor},
+    4px 4px ${fixedColor},
+    5px 5px ${fixedColor},
+    6px 6px ${fixedColor},
+    7px 7px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
+}
+
+movingShadow(settings);
+</script>
