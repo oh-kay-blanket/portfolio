@@ -7,6 +7,18 @@
 		<link type="text/css" rel="stylesheet" href="css/fontawesome/css/all.css" />
 		<link rel="icon" href="img/logoBlack.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/movingShadow.js"></script>
+		<script>
+		const settings = {
+		  selector: "#name", // targets class or id
+		  angle: 20, // Sets height of light source. Should be > 10 && < 100
+		  diffusion: 0, // blur-radius
+		  color: "#555", // text-color
+		  type: "shadow" // "shadow", "perspective"
+		}
+
+		movingShadow(settings);
+		</script>
 
 		<meta property="og:title" content="Mr. Plunkett" />
 		<meta property="og:type" content="website" />
