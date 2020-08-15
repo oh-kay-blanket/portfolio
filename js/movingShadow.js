@@ -4,20 +4,40 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.movingShadow = factory());
 }(this, (function () { 'use strict';
 
-  const getTouchPos = event => {
+  const getViewPos = event => {
     var eventDoc, doc, body;
 
-
-
-    if (event.touches) {
+    // Touch event
+    if (event.type === 'touchmove') {
 
       // Use event.pageX / event.pageY
-      const touchPos = {
+      const viewPos = {
         x: event.touches[0].pageX,
         y: event.touches[0].pageY
       };
-      return touchPos;
-    } else {
+      return viewPos;
+
+    // Device orientation
+    } else if (event.type === 'deviceorientation') {
+      // Window specs
+      const center = {
+        x: Math.round(window.innerWidth/2),
+        y: Math.round(window.innerHeight/2)
+      };
+
+      const movementFactor = {
+        x: event.gamma * 13,
+        y: (event.beta - 45) * 13
+      };
+
+      const viewPos = {
+        x: center.x - movementFactor.x,
+        y: center.y - movementFactor.y
+      };
+      return viewPos;
+
+    // Mouse event
+    } else if (event.type === 'mousemove') {
       event = event || window.event; // IE-ism
 
       // If pageX/Y aren't available and clientX/Y are,
@@ -37,11 +57,11 @@
       }
 
       // Use event.pageX / event.pageY
-      const touchPos = {
+      const viewPos = {
         x: event.pageX,
         y: event.pageY
       };
-      return touchPos;
+      return viewPos;
     }
   };
 
@@ -99,24 +119,27 @@
         element.style.textShadow = settings.fixedShadow;
       });
 
-    document.onmousemove = e => handleMove(e, settings);
-    document.ontouchmove = e => handleMove(e, settings);
+    // Listen for touch or movement
+    window.onmousemove = e => handleMove(e, settings);
+    // window.ontouchmove = e => handleMove(e, settings);
+    window.ondeviceorientation = e => handleMove(e, settings);
 
+
+    // Handles any touch or movement changes
     function handleMove(event, settings) {
 
       // Get mouse position
-      const touchPos = getTouchPos(event);
+      const viewPos = getViewPos(event);
 
       elements.forEach(element => {
         // Get element position
         const elePos = getElePos(element);
 
-        const calculateDistance = (touchPos, elePos, settings) => {
-
+        const calculateDistance = (viewPos, elePos, settings) => {
 
           // Find difference between mouse & element
-          const xDiff = touchPos.x - elePos.centerX;
-          const yDiff = touchPos.y - elePos.centerY;
+          const xDiff = viewPos.x - elePos.centerX;
+          const yDiff = viewPos.y - elePos.centerY;
 
           // Determines furthes mouse point (x or y) from element
           const farthestPointFactor = settings.type === "dropShadow" ? 40 : 4;
@@ -137,13 +160,8 @@
           }
         };
 
-        calculateDistance(touchPos, elePos, settings);
+        calculateDistance(viewPos, elePos, settings);
       });
-
-
-      // Window specs
-      // var w = window.innerWidth;
-      // var h = window.innerHeight;
     }
   };
 
