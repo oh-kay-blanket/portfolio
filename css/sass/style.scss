@@ -128,6 +128,11 @@ a {
     transition: .15s;
   }
 
+  &:focus {
+    color: #b3d9ff;
+    border: none;
+  }
+
   h4 {
     font-style: italic;
   }

@@ -12,7 +12,7 @@
 		<meta property="og:url" content="https://mrplunkett.com" />
 		<meta property="og:description" content="Web Design & Development" />
 		<meta charset="UTF-8">
-		<title>gross</title>
+		<title>projects | mr. plunkett</title>
 	</head>
 
 	<body>
@@ -41,7 +41,7 @@
 
 					<a href="https://github.com/mister-blanket/moving-shadow" class='project'>
 						<h4>moving shadow</h4>
-						<p>is a dynamic text-shadow module</p>
+						<p>is a text-shadow module</p>
 					</a>
 
 					<a href="https://mister-blanket.github.io/the-dude-abides/" class='project'>
@@ -124,17 +124,15 @@ const settings = {
   angle: 16, // Sets height of light source. Should be > 10 && < 100
   diffusion: 0, // blur-radius
   color: "#7e3d35", // shadow-color
-  xOffset: 7, // X offset value
-  yOffset: 7, // Y offset value
+  xOffset: 5, // X offset value
+  yOffset: 5, // Y offset value
   fixedShadow: `
     0px 0px ${fixedColor},
     1px 1px ${fixedColor},
     2px 2px ${fixedColor},
     3px 3px ${fixedColor},
     4px 4px ${fixedColor},
-    5px 5px ${fixedColor},
-    6px 6px ${fixedColor},
-    7px 7px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
+    5px 5px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
 }
 
 movingShadow(settings);

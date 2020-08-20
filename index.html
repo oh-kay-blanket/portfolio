@@ -78,17 +78,15 @@ const settings = {
   angle: 16, // Sets height of light source. Should be > 10 && < 100
   diffusion: 0, // blur-radius
   color: "#7e3d35", // shadow-color
-  xOffset: 7, // X offset value
-  yOffset: 7, // Y offset value
+  xOffset: 5, // X offset value
+  yOffset: 5, // Y offset value
   fixedShadow: `
     0px 0px ${fixedColor},
     1px 1px ${fixedColor},
     2px 2px ${fixedColor},
     3px 3px ${fixedColor},
     4px 4px ${fixedColor},
-    5px 5px ${fixedColor},
-    6px 6px ${fixedColor},
-    7px 7px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
+    5px 5px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
 }
 
 movingShadow(settings);
