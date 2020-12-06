@@ -117,22 +117,14 @@
 </html>
 
 <script>
-const fixedColor = "#5af";
 const settings = {
   selector: ".project-heading", // targets class or id
-  shadowType: "shadow", // "shadow", "dropShadow", "perspective"
-  angle: 16, // Sets height of light source. Should be > 10 && < 100
+  shadowType: "perspective-shadow", // "shadow", "dropShadow", "perspective"
+  angle: 80, // Sets height of light source. Should be > 10 && < 100
   diffusion: 0, // blur-radius
-  color: "#7e3d35", // shadow-color
-  xOffset: 5, // X offset value
-  yOffset: 5, // Y offset value
-  fixedShadow: `
-    0px 0px ${fixedColor},
-    1px 1px ${fixedColor},
-    2px 2px ${fixedColor},
-    3px 3px ${fixedColor},
-    4px 4px ${fixedColor},
-    5px 5px ${fixedColor}`// "5px 5px #555" if you want to includ an optional fixed shadow
+  color: "#5af", // shadow-color
+	altColor: "#7e3d35",
+	shineColor: "#d9aba577"
 }
 
 movingShadow(settings);
