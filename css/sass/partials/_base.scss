@@ -1,0 +1,113 @@
+@use '../abstracts/media' as *;
+@use '../abstracts/variables' as *;
+
+// VARIABLE SETUP
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800|Roboto);
+
+body {
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: $font2;
+  background-color: $background;
+  color: $text-main;
+}
+
+// SITE CONTAINER //
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 1% 1em;
+
+    @include tablet {
+    margin: 0 8em;
+    }
+
+    @include desktop(large) {
+    margin: 0 12em;
+    }
+
+    @include desktop(max) {
+    margin: 0 20em;
+    }
+}
+
+%heading {
+    margin: 0px;
+    font-family: $font1;
+    font-weight: 800;
+}
+
+h1 {
+    @extend %heading;
+    font-size: 3.2em;
+}
+
+h2 {
+    @extend %heading;
+    font-size: 2.2em;
+}
+
+h3 {
+    @extend %heading;
+    font-size: 1.9em;
+}
+
+h4 {
+    @extend %heading;
+    font-size: 1.6em;
+}
+
+@include desktop {
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    font-family: $font2;
+    color: $text-body;
+}
+
+a {
+    text-decoration: none;
+    color: $text-main;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+i, .icons a {
+    // color: $text-main;
+    font-size: 2rem;
+    transition: $transition;
+
+    &:hover {
+        color: $link;
+        transition: $transition;
+    }
+}
+
+.svg-inline--fa {
+    font-size: 1.4em;
+}

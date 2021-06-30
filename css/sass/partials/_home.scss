@@ -1,0 +1,29 @@
+@use '../abstracts/media' as *;
+@use '../abstracts/variables' as *;
+
+.front-page {
+  height: 100vh;
+  justify-content: center;
+}
+  
+  #name {
+    // margin-bottom: -10px;
+  }
+  
+  #role {
+    font-weight: 200;
+
+    @include mobile {
+      font-size: 1.8rem;
+    }
+  }
+  
+  #location {
+    letter-spacing: 7px;
+    font-weight: 600;
+    opacity: .6;
+  }
+  
+  .icons {
+    margin: 5px 0px 0px 3px;
+  }

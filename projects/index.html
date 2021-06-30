@@ -3,7 +3,7 @@
 	<head>
 		<!-- <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/mister-blanket/portfolio/master/css/style.css" /> -->
 		<link type="text/css" rel="stylesheet" href="../css/style.css" />
-		<link rel="icon" href="img/logoBlack.png"/>
+		<link rel="icon" href="../img/logoBlack.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://unpkg.com/moving-shadow"></script>
 		<link type="text/css" rel="stylesheet" href="../css/fontawesome/css/all.css" />
@@ -17,144 +17,122 @@
 	</head>
 
 	<body>
-		<div class="wrapper">
+		<div class="container">
 
-			<div class="subbanner">
-				<div class="contain">
-					<nav>
-					  <ul class="nav_wrapper">
-					    <li><a href="../"><i class="fas fa-arrow-left"></i></a></li>
-					  </ul>
-					</nav>
-				 <!-- <h1>gross</h1> -->
-				</div>
-			</div>
-
-      <div class="contain projects">
+			
+			<div class="projects">
+				<a href="../" id="back-button"><i class="fas fa-arrow-circle-left"></i></a>
 
 				<div>
 					<h2 class='project-heading'>javascript</h2>
 
-					<div class="front-page__links">
+					<div class="links-container">
 
-						<a href="https://mister-blanket.github.io/soil/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/soil/" class="link-block">
+							<div class="link-block__header">
 								<h4>soil</h4>
 							</div>
 							<p>is my travel map</p>
 						</a>
 
-						<a href="https://github.com/mister-blanket/moving-shadow" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://github.com/mister-blanket/moving-shadow" class="link-block">
+							<div class="link-block__header">
 								<h4>moving shadow</h4>
 							</div>
 							<p>is a text-shadow js module</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/the-dude-abides/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/the-dude-abides/" class="link-block">
+							<div class="link-block__header">
 								<h4>the dude abides</h4>
 							</div>
 							<p>is a canvas game</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/the-drain/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/the-drain/" class="link-block">
+							<div class="link-block__header">
 								<h4>the drain</h4>
 							</div>
 							<p>is a text game</p>
 						</a>
-	
+
 					</div>
 				</div>
 
 				<div>
 					<h2 class='project-heading'>react</h2>
 
-					<div class="front-page__links">
+					<div class="links-container">
 
-						<a href="https://mister-blanket.github.io/movie-translator/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/movie-translator/" class="link-block">
+							<div class="link-block__header">
 								<h4>reels</h4>
 							</div>
 							<p>is a movie title translator</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/vinyl/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/vinyl/" class="link-block">
+							<div class="link-block__header">
 								<h4>vinyl</h4>
 							</div>
 							<p>is my record collection</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/pulp/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/pulp/" class="link-block">
+							<div class="link-block__header">
 								<h4>pulp</h4>
 							</div>
 							<p>is the books I've read</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/adjective-conjugator/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/adjective-conjugator/" class="link-block">
+							<div class="link-block__header">
 								<h4>letters</h4>
 							</div>
 							<p>is an adjective conjugator</p>
 						</a>
 
-						<a href="https://mister-blanket.github.io/typing-speed-test/" class="front-page__link">
-							<div class="front-page__link__header">
+						<a href="https://mister-blanket.github.io/typing-speed-test/" class="link-block">
+							<div class="link-block__header">
 								<h4>typer</h4>
 							</div>
 							<p>is a typing speed test</p>
 						</a>
-	
+
 					</div>
-
-			</div>
-
-			<div>
-				<h2 class='project-heading'>d3</h2>
-
-				<div class="front-page__links">
-
-					<a href="https://mister-blanket.github.io/blood-lines/" class="front-page__link">
-						<div class="front-page__link__header">
-							<h4>blood lines</h4>
-						</div>
-						<p>is a family tree viewer</p>
-					</a>
-
-					<a href="https://mister-blanket.github.io/d3-sunset/" class="front-page__link">
-						<div class="front-page__link__header">
-							<h4>dusk</h4>
-						</div>
-						<p>is an SVG animation</p>
-					</a>
 
 				</div>
 
+				<div>
+					<h2 class='project-heading'>d3</h2>
+
+					<div id="links--d3" class="links-container">
+
+						<a href="https://mister-blanket.github.io/blood-lines/" class="link-block">
+							<div class="link-block__header">
+								<h4>blood lines</h4>
+							</div>
+							<p>is a family tree viewer</p>
+						</a>
+
+						<a href="https://mister-blanket.github.io/d3-sunset/" class="link-block">
+							<div class="link-block__header">
+								<h4>dusk</h4>
+							</div>
+							<p>is an SVG animation</p>
+						</a>
+
+					</div>
+
+				</div>
 			</div>
-
-			<!-- <div>
-				<h2 class='project-heading'>wordpress</h2>
-
-				<a href="https://wramta.org" class='project'>
-					<h4>wramta</h4>
-					<p>is a music therapy association</p>
-				</a>
-
-				<a href="https://higheroctavehealing.org" class='project'>
-					<h4>hoh</h4>
-					<p>is a music therapy org</p>
-				</a>
-			</div> -->
 		</div>
 	</body>
 </html>
 
 <script>
 const settings = {
-  selector: ".front-page__link__header h4, .front-page__link p", // targets class or id
+  selector: ".link-block__header h4, .link-block p", // targets class or id
   shadowType: "perspective", // "shadow", "dropShadow", "perspective"
   angle: 80, // Sets height of light source. Should be > 10 && < 100
   diffusion: 0, // blur-radius
@@ -163,5 +141,5 @@ const settings = {
 	shineColor: "#d9aba577"
 }
 
-movingShadow(settings);
+// movingShadow(settings);
 </script>

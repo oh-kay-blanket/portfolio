@@ -1,0 +1,26 @@
+// PROJECTS //
+@use '../abstracts/media' as *;
+@use '../abstracts/variables' as *;
+
+.projects {
+    position: relative;
+    margin-top: 7%;
+    
+    #back-button {
+        @include desktop(large) {
+            position: absolute;
+            top: -30px;
+            left: -80px;
+        }
+    }
+    
+    .project-heading {
+        margin-top: 8px;
+    }
+
+    #links--d3 {
+        @include mobile {
+            max-height: 200px;
+        }
+    }
+}
