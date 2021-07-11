@@ -1,0 +1,29 @@
+img {
+    max-width: 100%;
+}
+
+.ui-img__container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 4em;
+
+    .ui-img__wrapper {
+    }
+    
+    .ui-img {
+        border: .3em solid #333;
+        border-top: .4em solid #333;
+        border-bottom: .4em solid #333;
+        border-radius: 10px;
+        box-shadow:  1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff;
+    }
+
+    .ui-img--mobile {
+        position: absolute;
+        right: 1em;
+        bottom: -2em;
+        max-width: 20%;
+        border-top: .8em solid #333;
+        border-bottom: .5em solid #333;
+    }
+}
