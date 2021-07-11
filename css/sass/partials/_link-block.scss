@@ -3,7 +3,7 @@
 
 .links-container {
 
-    .links-container--static {
+    &.links-container--static {
         display: flex;
         flex-wrap: wrap;
     }
