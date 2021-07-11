@@ -3,6 +3,11 @@
 
 .links-container {
 
+    .links-container--static {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .link-block {
         display: flex;
         flex-direction: column;
@@ -10,7 +15,7 @@
         margin: 0px 2% 10px 0px;
         padding: 20px 25px;
         width: 163px;
-        height: 150px;
+        height: 163px;
         border: 2px solid white;
         border-radius: 10px;
         transition: $transition;
