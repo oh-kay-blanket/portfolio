@@ -23,4 +23,21 @@
             max-height: 200px;
         }
     }
+
+    #type-filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        h3 {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover, &.active {
+                color: $link;
+                transition: $transition;
+            }
+        }
+    }
 }

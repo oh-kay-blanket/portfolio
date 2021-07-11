@@ -2,35 +2,15 @@
 @use '../abstracts/variables' as *;
 
 .links-container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-height: 400px;
-    margin-top: 10px;
-
-    @include desktop {
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
-    @include mobile {
-        &:before, &:after {
-            content: "";
-            flex-basis: 100%;
-            width: 0;
-            order: 2;
-        }
-    }
 
     .link-block {
         display: flex;
         flex-direction: column;
-        width: 45%;
+        justify-content: center;
         margin: 0px 2% 10px 0px;
         padding: 20px 25px;
+        width: 163px;
+        height: 150px;
         border: 2px solid white;
         border-radius: 10px;
         transition: $transition;
@@ -38,19 +18,13 @@
         box-sizing: border-box;
     
         @include desktop {
-            width: 22%;
-            max-width: 200px;
+            width: 225px;
+            // max-width: 200px;
         }
 
         &:hover {
             background-color: $blue;
             transition: $transition;
-        }
-
-        // Reorder for masonry
-        @include mobile {
-            &:nth-child(2n+1) { order: 1; }
-            &:nth-child(2n+2)   { order: 2; }
         }
 
         h4, p {
