@@ -16,11 +16,12 @@
         padding: 20px 25px;
         width: 163px;
         height: 163px;
+        background-color: $red;
         border: 2px solid white;
         border-radius: 10px;
-        transition: $transition;
         box-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff;
         box-sizing: border-box;
+        transition: $transition;
     
         @include desktop {
             width: 225px;
