@@ -1,18 +1,5 @@
 @use '../abstracts/media' as *;
 @use '../abstracts/variables' as *;
-
-.front-page {
-  margin-top: 2em;
-  margin-bottom: 5em;
-}
-
-.logo {
-  max-width: 45px;
-
-  @include desktop(medium) {
-    max-width: 65px;
-  }
-}
   
   #name {
     color: $text-accent;
@@ -24,6 +11,12 @@
   
   #location {
     font-weight: 400;
+    font-size: 1rem;
+    color: #666;
+
+    @include desktop(medium) {
+      font-size: 1.2rem;
+    }
   }
   
   .icons {
