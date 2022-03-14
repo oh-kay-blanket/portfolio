@@ -2,10 +2,10 @@
 @use '../abstracts/variables' as *;
 
 .links-container {
+    min-height: calc(100vh - 92px);
 
-    &.links-container--static {
-        display: flex;
-        flex-wrap: wrap;
+    @include desktop {
+        min-height: calc(100vh - 143px);
     }
 
     .link-block {
@@ -16,12 +16,12 @@
         padding: 20px 25px;
         width: 163px;
         height: 163px;
-        background-color: $red;
-        border: 2px solid white;
+        background-color: #fff;
+        border: 2px solid $text-main;
         border-radius: 10px;
-        box-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff;
+        box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
         box-sizing: border-box;
-        transition: $transition;
+        transition: background-color $transition;
     
         @include desktop {
             width: 225px;
@@ -29,8 +29,12 @@
         }
 
         &:hover {
-            background-color: $blue;
-            transition: $transition;
+            background-color: $link;
+            transition: background-color $transition;
+            
+            h4, p {
+                color: $background;
+            }
         }
 
         h4, p {

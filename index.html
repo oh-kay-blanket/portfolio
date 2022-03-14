@@ -5,9 +5,9 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<!-- <link href="https://cdn.rawgit.com/mister-blanket/portfolio/master/css/fontawesome/css/all.css" rel="stylesheet"> -->
 		<link type="text/css" rel="stylesheet" href="css/fontawesome/css/all.css" />
-		<link rel="icon" href="img/logoWhite.png"/>
+		<link rel="icon" href="img/logo.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://unpkg.com/moving-shadow"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 		<meta property="og:title" content="Mr. Plunkett" />
 		<meta property="og:type" content="website" />
@@ -19,65 +19,159 @@
 
 	<body>
 		<div class="container front-page">
-			<h1 id="name">mr. plunkett</h1>
-			<h2 id="role">frontend development</h2>
-			<h3 id="location">dallas, texas</h3>
+			<img class="logo" src="img/logo.png">
+			<h1 id="name">Michael Plunkett</h1>
+			<h3 id="role">front end developer | ui/ux | musician</h3>
 			<div class="icons">
 				<a href="mailto:michael@mrplunkett.com">
 					<i class="fas fa-envelope"></i>
-				</a>&nbsp;
+				</a>
 				<a href="https://github.com/mister-blanket">
 					<i class="fab fa-github"></i>
-				</a>&nbsp;
+				</a>
+				<a href="https://www.instagram.com/mister.blanket/">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="https://michaelplunkett.bandcamp.com/">
+					<i class="fab fa-bandcamp"></i>
+				</a>
 				<a href="https://www.linkedin.com/in/michaelplunkett1/">
 					<i class="fab fa-linkedin-in"></i>
 				</a>
 			</div>
+			<h4 id="location">Dallas, Texas</h4>
 
-			<div class="links-container links-container--static">
+			<div class="projects">
+				<h2>work</h2>
+				
+				<div class="projects__heading">
+                    <div id="type-filter">
+                        <h3 data-filter="*" class="active">all</h3>
+                        <h3 data-filter=".js">js</h3>
+                        <h3 data-filter=".react">react</h3>
+                        <h3 data-filter=".ui">ui</h3>
+                        <h3 data-filter=".d3">d3</h3>
+                    </div>
+				</div>
+                    
 
-				<a href="https://mister-blanket.github.io/blood-lines/" class="link-block">
-					<div class="link-block__header">
-						<h4>blood lines</h4>
-					</div>
-					<p>is a family tree viewer, built with d3.js and react.js</p>
-				</a>
+				<div class="links-container">
 
-				<a href="https://mister-blanket.github.io/soil/" class="link-block">
-					<div class="link-block__header">
-						<h4>soil</h4>
-					</div>
-					<p>is my travel map, built with google maps javascript api</p>
-				</a>
+					<a href="https://mister-blanket.github.io/blood-lines/" class="link-block js react d3">
+						<div class="link-block__header">
+							<h4>blood lines</h4>
+						</div>
+						<p>is a family tree viewer</p>
+					</a>
+					
+					<a href="https://mister-blanket.github.io/soil/" class="link-block js">
+						<div class="link-block__header">
+							<h4>soil</h4>
+						</div>
+						<p>is my travel map</p>
+					</a>
 
-				<a href="https://github.com/mister-blanket/moving-shadow" class="link-block">
-					<div class="link-block__header">
-						<h4>moving shadow</h4>
-					</div>
-					<p>is a dynamic text-shadow module, build in js</p>
-				</a>
+					<a href="https://mister-blanket.github.io/vinyl/" class="link-block js react ui">
+						<div class="link-block__header">
+							<h4>vinyl</h4>
+						</div>
+						<p>is my record collection</p>
+					</a>
 
-				<a href="projects/" class="link-block">
-					<div class="link-block__header">
-						<h4>all</h4>
-					</div>
-					<p>view all projects</p>
-				</a>
+					<a href="https://github.com/mister-blanket/moving-shadow" class="link-block js">
+						<div class="link-block__header">
+							<h4>moving shadow</h4>
+						</div>
+						<p>is a dynamic text-shadow module</p>
+					</a>
+
+					<a href="ui/" class="link-block ui">
+						<div class="link-block__header">
+							<h4>design</h4>
+						</div>
+						<p>examples of client work</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/the-dude-abides/" class="link-block js">
+						<div class="link-block__header">
+							<h4>the dude abides</h4>
+						</div>
+						<p>is a canvas game</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/movie-translator/" class="link-block js react">
+						<div class="link-block__header">
+							<h4>reels</h4>
+						</div>
+						<p>is a movie title translator</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/pulp/" class="link-block js react ui">
+						<div class="link-block__header">
+							<h4>pulp</h4>
+						</div>
+						<p>is the books I've read</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/adjective-conjugator/" class="link-block js react">
+						<div class="link-block__header">
+							<h4>letters</h4>
+						</div>
+						<p>is an adjective conjugator</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/the-drain/" class="link-block js">
+						<div class="link-block__header">
+							<h4>the drain</h4>
+						</div>
+						<p>is a text game</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/typing-speed-test/" class="link-block js react">
+						<div class="link-block__header">
+							<h4>typer</h4>
+						</div>
+						<p>is a typing speed test</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/d3-sunset/" class="link-block d3">
+						<div class="link-block__header">
+							<h4>dusk</h4>
+						</div>
+						<p>is an SVG animation</p>
+					</a>
+
+					<a href="https://mister-blanket.github.io/d3-face/" class="link-block d3">
+						<div class="link-block__header">
+							<h4>face</h4>
+						</div>
+						<p>is an SVG animation</p>
+					</a>
+
+				</div>
 			</div>
 		</div>
 	</body>
 </html>
 
 <script>
-const settings = {
-  selector: ".link-block__header h4, .link-block p", // targets class or id
-  shadowType: "perspective", // "shadow", "dropShadow", "perspective"
-  angle: 80, // Sets height of light source. Should be > 10 && < 100
-  diffusion: 0, // blur-radius
-  color: "#7e3d35", // shadow-color
-	altColor: "#7e3d35",
-	shineColor: "#d9aba577"
-}
+    // // isotope
+    var grid = document.querySelector('.links-container');
+    var iso = new Isotope( grid, {
+        // options...
+        itemSelector: '.link-block',
+        layoutMode: 'fitRows',
+    });
 
-// movingShadow(settings);
+    const filterButtons = document.querySelectorAll("#type-filter h3");
+
+    filterButtons.forEach(function(btn) {
+        btn.addEventListener("click", function(){
+            filterButtons.forEach(function(filBun) {
+                filBun.classList.remove("active");
+            })
+            btn.classList.add("active");
+            iso.arrange({ filter: btn.dataset.filter });
+        });
+    });
 </script>

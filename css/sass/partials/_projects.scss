@@ -3,34 +3,25 @@
 @use '../abstracts/variables' as *;
 
 .projects {
-    position: relative;
-    margin-top: 7%;
-    
-    #back-button {
-        @include desktop(large) {
-            position: absolute;
-            top: -30px;
-            left: -80px;
-        }
-    }
-    
-    .project-heading {
-        margin-top: 8px;
-    }
+    margin-top: 3%;
 
-    #links--d3 {
-        @include mobile {
-            max-height: 200px;
-        }
+    .projects__heading {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        margin-bottom: 20px;
+        padding: 8px 0;
+        // width: 100vw;
+        background-color: $background;
     }
 
     #type-filter {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 20px;
 
         h3 {
-            margin: 0 10px;
+            margin-right: 16px;
             cursor: pointer;
             transition: $transition;
 

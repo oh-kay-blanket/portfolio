@@ -2,26 +2,28 @@
 @use '../abstracts/variables' as *;
 
 .front-page {
-  height: 100vh;
-  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.logo {
+  max-width: 45px;
+
+  @include desktop(medium) {
+    max-width: 65px;
+  }
 }
   
   #name {
-    // margin-bottom: -10px;
+    color: $text-accent;
   }
   
   #role {
-    font-weight: 200;
-
-    @include mobile {
-      font-size: 1.8rem;
-    }
+    font-weight: 400;
   }
   
   #location {
-    letter-spacing: 7px;
-    font-weight: 600;
-    opacity: .6;
+    font-weight: 400;
   }
   
   .icons {

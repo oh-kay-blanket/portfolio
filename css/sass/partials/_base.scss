@@ -35,42 +35,41 @@ body {
 }
 
 %heading {
-    margin: 0px;
+    margin: .2rem 0;
     font-family: $font1;
-    font-weight: 800;
 }
 
 h1 {
     @extend %heading;
-    font-size: 3.2em;
+    // font-size: 2.2em;
 }
 
 h2 {
     @extend %heading;
-    font-size: 2.2em;
+    // font-size: 2.em;
 }
 
 h3 {
     @extend %heading;
-    font-size: 1.9em;
+    // font-size: 1.9em;
 }
 
 h4 {
     @extend %heading;
-    font-size: 1.6em;
+    // font-size: 1.6em;
 }
 
 @include desktop {
     h1 {
-        font-size: 6em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 3.5em;
+        font-size: 2.2em;
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 1.8em;
     }
 
     h4 {
@@ -98,9 +97,9 @@ a {
 }
 
 i, .icons a {
-    // color: $text-main;
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: $transition;
+    margin-right: 6px;
 
     &:hover {
         color: $link;
