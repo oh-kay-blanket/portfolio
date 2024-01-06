@@ -1,22 +1,41 @@
+:root {
+    --text-main: #444;
+    --text-body: #333;
+    --text-accent: #444;
+    --text-subtle: #666;
+    --link: #ed4a49;
+    --background: #fcfaf4;
+    --background--dark: #813e36;
+    --tile-bg: #fff;
+
+    --font1: 'Montserrat', sans-serif;
+}
+
+[data-theme="dark"] {
+    --text-main: #fff9ec;
+    --text-body: #E6C5B5;
+    --text-accent: #ffdccc;
+    --text-subtle: #AEA89D;
+    --link: #DA0054;
+    --background: #011101;
+    --tile-bg: #000300;
+
+    --font1: 'Montserrat Alternates', sans-serif;
+}
+
 // ITEM
-$text-main: #444;
-$text-body: #333;
-$text-accent: #444;
-$link: #ed4a49;
-$background: #fcfaf4;
-$background--dark: #813e36;
-
-// Possible
-// ed4a49
-
-
-// COLOR
-$blue: #5af;
-$red: #9c4b41;
-$red--dark: #813e36;
+$text-main: var(--text-main);
+$text-body: var(--text-body);
+$text-accent: var(--text-accent);
+$text-subtle: var(--text-subtle);
+$link: var(--link);
+$background: var(--background);
+$background--dark: var(--background--dark);
+$tile-bg: var(--tile-bg);
 
 // FONT
-$font1: 'Montserrat', sans-serif;
+$font1: var(--font1);
 $font2: 'Roboto', sans-serif;
+$font3: 'Sacramento', sans-serif;
 $shadow: 0px 5px 16px rgba(0,0,0,0.3);
 $transition: .15s ease;

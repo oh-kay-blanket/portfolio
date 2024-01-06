@@ -2,7 +2,7 @@
 @use '../abstracts/variables' as *;
 
 // VARIABLE SETUP
-@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800|Roboto|Montserrat+Alternates|Sacramento);
 
 body {
   margin: 0;
@@ -99,7 +99,30 @@ a {
         max-width: 65px;
       }
     }
-  }
+
+    .text-logo {
+        display: none;
+        font-family: $font3;
+        font-size: 4rem;
+        transform: rotate(-20deg);
+        width: fit-content;
+        color: $link;
+        margin: 0;
+    }
+}
+
+[data-theme="dark"] { 
+    .header {
+        .logo {
+            display: none;
+        }
+
+        .text-logo {
+            display: block;
+        }
+    }
+}
+
 
 .icon {
     height: 20px;

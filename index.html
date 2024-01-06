@@ -21,6 +21,7 @@
 		<div class="container">
 			<a href="./" class="header">
 				<img class="logo" src="img/logo.png">
+				<p class="text-logo">kp</p>
 			</a>
 			<h1 id="name">kayla plunkett</h1>
 			<h3 id="role">code | design | music | photography | art</h3>
@@ -178,6 +179,15 @@
 </html>
 
 <script>
+	// Get if dark mode on device:
+	const darkMode = window.matchMedia("(prefers-color-scheme:dark)").matches;
+
+	if (darkMode) {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else {
+		document.documentElement.setAttribute('data-theme', 'light');
+	}
+
     // // isotope
     var grid = document.querySelector('.links-container');
     var iso = new Isotope( grid, {

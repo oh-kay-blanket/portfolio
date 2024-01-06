@@ -47,7 +47,7 @@
             padding: 20px 25px;
             width: 48%;
             height: 163px;
-            background-color: #fff;
+            background-color: $tile-bg;
             border: 2px solid $text-main;
             border-radius: 10px;
             box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
@@ -57,6 +57,10 @@
             @include desktop(medium) {
                 width: 225px;
                 // max-width: 200px;
+            }
+
+            h4 {
+                // color: $link;
             }
     
             &:hover {

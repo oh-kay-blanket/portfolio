@@ -12,7 +12,7 @@
   #location {
     font-weight: 400;
     font-size: 1rem;
-    color: #666;
+    color: $text-subtle;
 
     @include desktop(medium) {
       font-size: 1.2rem;
