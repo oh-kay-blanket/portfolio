@@ -15,9 +15,9 @@
     --text-main: #fff9ec;
     --text-body: #E6C5B5;
     --text-accent: #ffdccc;
-    --text-subtle: #AEA89D;
+    --text-subtle: #d5d0c2;
     --link: #DA0054;
-    --background: #011101;
+    --background: #010301;
     --tile-bg: #000300;
 
     --font1: 'Montserrat Alternates', sans-serif;
@@ -39,3 +39,42 @@ $font2: 'Roboto', sans-serif;
 $font3: 'Sacramento', sans-serif;
 $shadow: 0px 5px 16px rgba(0,0,0,0.3);
 $transition: .15s ease;
+
+// Blink
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+    @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+    @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+    @content;
+    }
+    @-o-keyframes #{$animation-name} {
+    @content;
+    }  
+    @keyframes #{$animation-name} {
+    @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+@include keyframes(blink) {
+    40% { opacity: 1; }
+    40.5% { opacity: 0; }
+    41% { opacity: 1; }
+    41.5% { opacity: 0.04; }
+    42% { opacity: 1; }
+}
+
+@include keyframes(buzz) {
+    90% { opacity: 0.83; }
+}

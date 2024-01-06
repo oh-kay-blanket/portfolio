@@ -60,15 +60,17 @@
             }
 
             h4 {
-                // color: $link;
+                color: $text-accent;
             }
     
             &:hover {
-                background-color: $link;
-                transition: background-color $transition;
+                // background-color: $link;
+                // transition: background-color $transition;
+                border: 2px solid $link;
+                box-shadow: 1px 1px 0 $link, 2px 2px 0 $link, 3px 3px 0 $link;
                 
-                h4, p {
-                    color: $background;
+                h4 {
+                    color: $link;
                 }
             }
     

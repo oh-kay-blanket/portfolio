@@ -76,7 +76,7 @@ h4 {
 
 p {
     font-family: $font2;
-    color: $text-body;
+    color: $text-main;
 }
 
 a {
@@ -103,11 +103,15 @@ a {
     .text-logo {
         display: none;
         font-family: $font3;
-        font-size: 4rem;
+        font-size: 5rem;
         transform: rotate(-20deg);
         width: fit-content;
-        color: $link;
-        margin: 0;
+        // color: $link;
+        margin: 0 0 0 1rem;
+
+        color: white;
+        text-shadow: 0 0 0 transparent, 0 0 50px $link, 0 0 10px $link, 0 0 20px $link, 0 0 50px $link, 0 0 100px $link, 0 0 150px $link;
+        @include animation('blink 14s infinite alternate, buzz 0.001s infinite alternate');
     }
 }
 
