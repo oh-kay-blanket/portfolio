@@ -2,5 +2,23 @@
   "dependencies": {
     "rollup": "^2.70.0",
     "sass": "^1.49.9"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio for Kayla Plunkett",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "scss": "sass --style=compressed css/sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oh-kay-blanket/portfolio.git"
+  },
+  "author": "Kayla Plunkett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oh-kay-blanket/portfolio/issues"
+  },
+  "homepage": "https://github.com/oh-kay-blanket/portfolio#readme"
 }
