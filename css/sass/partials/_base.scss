@@ -22,7 +22,7 @@ body {
     margin: 1em 1em;
 
     @include tablet {
-    margin: 1em 8em;
+        margin: 1em 8em;
     }
 
     @include desktop(medium) {
@@ -38,7 +38,34 @@ body {
 
 h1 {
     @extend %heading;
+    color: $text-accent;
     // font-size: 2.2em;
+}
+
+[data-theme="dark"] {
+    h1 {
+        font-family: 'Despairs', sans-serif;
+        font-weight: unset;
+        margin-top: 2rem;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0 0 0 transparent, 0 0 50px $neon, 0 0 10px $neon, 0 0 20px $neon, 0 0 50px $neon, 0 0 100px $neon, 0 0 150px $neon, 0 0 250px $neon;
+
+        @media (min-width: 769px) {
+            font-size: 5rem;
+        }
+    }
+
+    .logo-animate {
+        // @include animation('buzz 0.01s infinite');
+        // @include animation('flicker 14s infinite');
+        @include animation('turn-on 3s 1');
+    }
+
+    .logo-buzz {
+        // @include animation('buzz 0.01s infinite');
+        @include animation('flicker 14s infinite');
+    }
 }
 
 h2 {
@@ -76,6 +103,7 @@ h4 {
 
 p {
     font-family: $font2;
+    font-size: 15px;
     color: $text-main;
 }
 
@@ -98,20 +126,6 @@ a {
       @include desktop(medium) {
         max-width: 65px;
       }
-    }
-
-    .text-logo {
-        display: none;
-        font-family: $font3;
-        font-size: 5rem;
-        transform: rotate(-20deg);
-        width: fit-content;
-        // color: $link;
-        margin: 0 0 0 1rem;
-
-        color: white;
-        text-shadow: 0 0 0 transparent, 0 0 50px $link, 0 0 10px $link, 0 0 20px $link, 0 0 50px $link, 0 0 100px $link, 0 0 150px $link;
-        @include animation('blink 14s infinite alternate, buzz 0.001s infinite alternate');
     }
 }
 

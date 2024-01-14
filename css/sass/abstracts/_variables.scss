@@ -32,6 +32,7 @@ $link: var(--link);
 $background: var(--background);
 $background--dark: var(--background--dark);
 $tile-bg: var(--tile-bg);
+$neon: var(--link);
 
 // FONT
 $font1: var(--font1);
@@ -40,23 +41,13 @@ $font3: 'Sacramento', sans-serif;
 $shadow: 0px 5px 16px rgba(0,0,0,0.3);
 $transition: .15s ease;
 
-// Blink
+// Keyframes
 @mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
-    @content;
-    }
-    @-moz-keyframes #{$animation-name} {
-    @content;
-    }  
-    @-ms-keyframes #{$animation-name} {
-    @content;
-    }
-    @-o-keyframes #{$animation-name} {
-    @content;
-    }  
-    @keyframes #{$animation-name} {
-    @content;
-    }
+    @-webkit-keyframes #{$animation-name} { @content; }
+    @-moz-keyframes #{$animation-name} { @content; }  
+    @-ms-keyframes #{$animation-name} { @content; }
+    @-o-keyframes #{$animation-name} { @content; }  
+    @keyframes #{$animation-name} { @content; }
 }
 
 @mixin animation($str) {
@@ -67,7 +58,7 @@ $transition: .15s ease;
     animation: #{$str};      
 }
 
-@include keyframes(blink) {
+@include keyframes(flicker) {
     40% { opacity: 1; }
     40.5% { opacity: 0; }
     41% { opacity: 1; }
@@ -76,5 +67,20 @@ $transition: .15s ease;
 }
 
 @include keyframes(buzz) {
-    90% { opacity: 0.83; }
+    90% { opacity: 0.76; }
+}
+
+@include keyframes(turn-on) {
+    0% { opacity: 0; }
+
+    39.5% { opacity: 0; }
+    40% { opacity: 1; }
+    40.5% { opacity: 0; }
+
+    61% { opacity: 0; }
+    61.5% { opacity: 1; }
+    63% { opacity: 0; }
+
+    99.9% { opacity: 0; }
+    100% { opacity: 1; }
 }
