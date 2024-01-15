@@ -59,7 +59,7 @@ h1 {
     .logo-animate {
         // @include animation('buzz 0.01s infinite');
         // @include animation('flicker 14s infinite');
-        @include animation('turn-on 3s 1');
+        @include animation('turn-on 2s 1');
     }
 
     .logo-buzz {
