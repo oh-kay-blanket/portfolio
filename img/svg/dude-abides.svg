@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Sunglasses frames -->
+  <rect x="60" y="80" width="30" height="20" rx="5" ry="5" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="110" y="80" width="30" height="20" rx="5" ry="5" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <!-- Bridge -->
+  <line x1="90" y1="90" x2="110" y2="90" stroke="#ed4a49" stroke-width="4"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Sunset -->
+  <circle cx="100" cy="100" r="30" stroke="#ed4a49" stroke-width="4" fill="#ed4a49"/>
+  <!-- Mountains -->
+  <path d="M 30 130 L 80 80 L 130 130 Z" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <path d="M 70 130 L 120 80 L 170 130 Z" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+</svg>

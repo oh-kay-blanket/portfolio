@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Grid of tiles -->
+  <rect x="40" y="40" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="80" y="40" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="120" y="40" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="40" y="80" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="80" y="80" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="120" y="80" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="40" y="120" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="80" y="120" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+  <rect x="120" y="120" width="40" height="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4"/>
+</svg>

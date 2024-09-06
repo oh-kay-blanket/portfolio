@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Camera body with rounded edges and thick strokes -->
+  <rect x="50" y="60" width="105" height="80" rx="20" ry="20" stroke="#ed4a49" stroke-width="4" fill="none"/>
+  
+  <!-- Camera lens with thick stroke -->
+  <ellipse cx="100" cy="100" rx="32" ry="30" stroke="#ed4a49" stroke-width="4" fill="none"/>
+
+  <!-- Inner lens circle with thick stroke -->
+  <circle cx="100" cy="100" r="20" stroke="#ed4a49" stroke-width="3" fill="none"/>
+
+  <!-- Camera grip with thick stroke -->
+  <rect x="30" y="70" width="22" height="60" rx="7" ry="7" stroke="#ed4a49" stroke-width="4" fill="none"/>
+  
+  <!-- Hide overlapping lines with a rounded filled area -->
+  <rect x="50" y="70" width="12" height="60" rx="7" ry="7" fill="#fcfaf4"/>
+  
+  <!-- Flash area with thick stroke -->
+  <rect x="70" y="40" width="60" height="22" rx="7" ry="7" stroke="#ed4a49" stroke-width="4" fill="none"/>
+</svg>
