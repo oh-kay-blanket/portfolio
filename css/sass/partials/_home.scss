@@ -56,6 +56,7 @@
 
     .links-container {
         min-height: calc(100vh - 130px);
+        margin: 0 -2%;
     
         @include desktop(medium) {
             min-height: calc(100vh - 143px);
@@ -65,43 +66,55 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0px 2% 10px 0px;
-            padding: 20px 25px;
-            width: 48%;
-            height: 163px;
-            background-color: $tile-bg;
-            border: 2px solid $text-main;
-            border-radius: 10px;
-            box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
-            box-sizing: border-box;
-            transition: background-color $transition;
+            margin: 0px .5% 1rem 0px;
+            padding: .5rem;
+            width: 45%;
+            height: auto;
 
             @include desktop(medium) {
-                width: 225px;
-                // max-width: 200px;
+                width: 200px;
+                padding: 1rem;
+                margin: 0px 1% 1rem 0px;
             }
 
-            h4 {
-                color: $text-accent;
-            }
-
-            &:hover {
-                // background-color: $link;
-                // transition: background-color $transition;
-                border: 2px solid $link;
-                box-shadow: 1px 1px 0 $link, 2px 2px 0 $link, 3px 3px 0 $link;
-                
-                h4 {
-                    color: $link;
-                }
-            }
-
-            h4, p {
-                margin: 0;
+            img {
+                width: 100%;
+                height: auto;
+                border: 2px solid $text-main;
+                border-radius: 1.5rem;
+                box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
+                box-sizing: border-box;
+                transition: background-color $transition;
+                margin-bottom: 1rem;
             }
 
             h4 {
                 font-weight: 800;
+                color: $text-accent;
+                font-size: 1.1rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            h4, p {
+                margin-left: .5rem;
+            }
+
+            &:hover {
+
+                img {
+                    // background-color: $link;
+                    // transition: background-color $transition;
+                    border: 2px solid $link;
+                    box-shadow: 1px 1px 0 $link, 2px 2px 0 $link, 3px 3px 0 $link;
+                }
+                
+                h4 {
+                    color: $link;
+                }
             }
 
             .tools {
