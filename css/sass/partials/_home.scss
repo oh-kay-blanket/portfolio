@@ -79,7 +79,7 @@
 
             img {
                 width: 100%;
-                height: auto;
+                aspect-ratio: 1 / 1;
                 border: 2px solid $text-main;
                 border-radius: 1.5rem;
                 box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
