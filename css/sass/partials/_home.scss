@@ -2,137 +2,139 @@
 @use '../abstracts/variables' as *;
 
 @font-face {
-    font-family: "Despairs";
-    src: url("../fonts/despairs/despairs-font-trial.ttf");
+  font-family: 'Despairs';
+  src: url('../fonts/despairs/despairs-font-trial.ttf');
 }
 
 #role {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 #location {
-    font-weight: 400;
-    font-size: 1rem;
-    color: $text-body;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $text-body;
 
-    @include desktop(medium) {
-        font-size: 1.2rem;
-    }
+  @include desktop(medium) {
+    font-size: 1.2rem;
+  }
 }
 
 .icons {
-    margin: 5px 0px 10px 3px;
+  margin: 5px 0px 10px 3px;
 }
 
 .projects {
-    margin-top: 2%;
+  margin-top: 2%;
 
-    .projects__heading {
-        position: sticky;
-        top: 0px;
-        left: 0px;
-        z-index: 1;
-        margin-bottom: 20px;
-        padding: 8px 0;
-        // width: 100vw;
-        background-color: $background;
+  .projects__heading {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-bottom: 20px;
+    padding: 8px 0;
+    // width: 100vw;
+    background-color: $background;
+  }
+
+  #type-filter {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      margin-right: 16px;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover,
+      &.active {
+        color: $link;
+        transition: $transition;
+      }
     }
+  }
 
-    #type-filter {
-        display: flex;
-        flex-wrap: wrap;
+  .links-container {
+    // min-height: calc(100vh - 130px);
+    // margin: 0 -2%;
 
-        h3 {
-            margin-right: 16px;
-            cursor: pointer;
-            transition: $transition;
+    // @include desktop(medium) {
+    //   min-height: calc(100vh - 143px);
+    // }
 
-            &:hover, &.active {
-                color: $link;
-                transition: $transition;
-            }
-        }
+    .link-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #fff;
+      margin: 1.5%;
+      padding: 0 1rem;
+      width: 36%;
+      height: 300px;
+      box-shadow:
+        1px 1px 0 $text-main,
+        2px 2px 0 $text-main,
+        3px 3px 0 $text-main;
+      border: 2px solid $text-main;
+      border-radius: 1.5rem;
+      transition: box-shadow 0.5s;
+
+      @media (max-width: 389px) {
+        width: 35%;
+      }
+
+      @include desktop(medium) {
+        width: 16%;
+        height: 350px;
+        margin: 2%;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #aaa;
+      }
+
+      h4 {
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      &:hover {
+        box-shadow:
+          1px 1px 0 $text-main,
+          2px 2px 0 $text-main,
+          3px 3px 0 $text-main,
+          3px 4px 0 $text-main,
+          4px 5px 0 $text-main,
+          4px 6px 0 $text-main;
+        transition: box-shadow 0.15s;
+      }
+
+      .tools {
+        margin-top: 0.5rem;
+        letter-spacing: 1px;
+        color: $link;
+        opacity: 0.8;
+        font-weight: 800;
+        font-size: 14px;
+      }
     }
-
-    .links-container {
-        min-height: calc(100vh - 130px);
-        margin: 0 -2%;
-    
-        @include desktop(medium) {
-            min-height: calc(100vh - 143px);
-        }
-    
-        .link-block {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0px .5% 1rem 0px;
-            padding: .5rem;
-            width: 45%;
-            height: auto;
-
-            @include desktop(medium) {
-                width: 200px;
-                padding: 1rem;
-                margin: 0px 1% 1rem 0px;
-            }
-
-            img {
-                width: 100%;
-                aspect-ratio: 1 / 1;
-                border: 2px solid $text-main;
-                border-radius: 1.5rem;
-                box-shadow: 1px 1px 0 $text-main, 2px 2px 0 $text-main, 3px 3px 0 $text-main;
-                box-sizing: border-box;
-                transition: background-color $transition;
-                margin-bottom: 1rem;
-            }
-
-            h4 {
-                font-weight: 800;
-                color: $text-accent;
-                font-size: 1.1rem;
-            }
-
-            p {
-                margin: 0;
-                font-size: 14px;
-            }
-
-            h4, p {
-                margin-left: .5rem;
-            }
-
-            &:hover {
-
-                img {
-                    // background-color: $link;
-                    // transition: background-color $transition;
-                    border: 2px solid $link;
-                    box-shadow: 1px 1px 0 $link, 2px 2px 0 $link, 3px 3px 0 $link;
-                }
-                
-                h4 {
-                    color: $link;
-                }
-            }
-
-            .tools {
-                margin-top: .5rem;
-                letter-spacing: 1px;
-                // font-family: $font1;
-                color: $link;
-                opacity: .8;
-                font-weight: 800;
-                font-size: 14px;
-                // text-transform: uppercase;
-            }
-        }
-    }
+  }
 }
 
-[data-theme="dark"] {
-    .tools {
-        opacity: 1 !important;
-    }
+[data-theme='dark'] {
+  .tools {
+    opacity: 1 !important;
+  }
 }
