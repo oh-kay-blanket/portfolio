@@ -32,34 +32,32 @@
 
   <body>
     <div class="container">
-      <div class="header">
-        <img class="logo" src="img/headshot-2025-10.jpg" />
+      <img class="logo" src="img/headshot-2025-10.jpg" />
+      <div class="about">
         <h1 class="name">kayla plunkett</h1>
-      </div>
-      <h3 id="role">code | design | music | photography | art</h3>
-      <h4 id="location">dallas, texas</h4>
-      <div class="icons">
-        <a href="mailto:kayla.lee.plunkett@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/oh-kay-blanket">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kaylaleeplunkett/">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+        <h4 id="location">dallas, texas</h4>
+        <div class="icons">
+          <a href="mailto:kayla.lee.plunkett@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/oh-kay-blanket">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kaylaleeplunkett/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
 
       <div class="projects">
         <div class="projects__heading">
-          <div id="type-filter">
-            <h3 data-filter="*" class="active">all</h3>
-            <h3 data-filter=".js">js</h3>
-            <h3 data-filter=".react">react</h3>
-            <h3 data-filter=".ui">ui</h3>
-            <h3 data-filter=".d3">data visualization</h3>
-            <h3 data-filter=".art">art</h3>
-          </div>
+          <ul id="type-filter">
+            <li data-filter="*" class="active">all work</li>
+            <li data-filter=".js">code</li>
+            <li data-filter=".ui">design</li>
+            <li data-filter=".d3">data visualization</li>
+            <li data-filter=".art">art</li>
+          </ul>
         </div>
 
         <div class="links-container">
@@ -261,7 +259,7 @@
     layoutMode: 'fitRows',
   });
 
-  const filterButtons = document.querySelectorAll('#type-filter h3');
+  const filterButtons = document.querySelectorAll('#type-filter li');
 
   filterButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
