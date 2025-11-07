@@ -6,13 +6,20 @@
   src: url('../fonts/despairs/despairs-font-trial.ttf');
 }
 
+.heading {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   max-width: 100px;
   border-radius: 50%;
   padding-top: 2rem;
+  margin-right: 1rem;
 
   @include desktop(medium) {
     max-width: 120px;
+    margin-right: 1rem;
   }
 }
 
@@ -45,7 +52,8 @@
     font-weight: 400;
     font-size: 1rem;
     color: $text-body;
-    letter-spacing: 8px;
+    // letter-spacing: 8px;
+    font-family: monospace;
 
     @include desktop(medium) {
       font-size: 1.2rem;
@@ -65,9 +73,7 @@
     top: 0px;
     left: 0px;
     z-index: 1;
-    margin-bottom: 20px;
     padding: 8px 0;
-    // width: 100vw;
     background-color: $background;
   }
 
@@ -78,15 +84,14 @@
     padding: 0;
 
     li {
-      margin-right: 16px;
       cursor: pointer;
       transition: $transition;
       background-color: #cca5;
       padding: 0.25rem 0.5rem;
       margin: 0.5rem 0.5rem 0.5rem 0;
       border-radius: 5px;
-      font-weight: 400;
       font-family: monospace;
+      font-size: 14px;
 
       &:hover,
       &.active {
@@ -98,20 +103,13 @@
   }
 
   .links-container {
-    // min-height: calc(100vh - 130px);
-    // margin: 0 -2%;
-
-    // @include desktop(medium) {
-    //   min-height: calc(100vh - 143px);
-    // }
-
     .link-block {
       display: flex;
       flex-direction: column;
       justify-content: center;
       overflow: hidden;
       background-color: #fff;
-      margin: 1.5%;
+      margin: 2%;
       padding: 0 1rem;
       width: 36%;
       height: 300px;
@@ -121,9 +119,11 @@
         3px 3px 0 $text-main;
       border: 2px solid $text-main;
       border-radius: 1.5rem;
-      transition: box-shadow 0.5s;
+      transition:
+        box-shadow 0.5s,
+        border-color 0.5s;
 
-      @media (max-width: 389px) {
+      @media (max-width: 390px) {
         width: 35%;
       }
 
@@ -153,14 +153,17 @@
       }
 
       &:hover {
+        border-color: $link;
         box-shadow:
-          1px 1px 0 $text-main,
-          2px 2px 0 $text-main,
-          3px 3px 0 $text-main,
-          3px 4px 0 $text-main,
-          4px 5px 0 $text-main,
-          4px 6px 0 $text-main;
-        transition: box-shadow 0.15s;
+          1px 1px 0 $link,
+          2px 2px 0 $link,
+          3px 3px 0 $link,
+          3px 4px 0 $link,
+          4px 5px 0 $link,
+          4px 6px 0 $link;
+        transition:
+          box-shadow 0.15s,
+          border-color 0.15s;
       }
 
       .tools {
