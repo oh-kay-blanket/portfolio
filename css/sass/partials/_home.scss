@@ -25,6 +25,7 @@
 
 .about {
   margin-top: 3rem;
+  max-width: 500px;
 
   .icon {
     height: 20px;
@@ -107,18 +108,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 1rem;
       overflow: hidden;
       // background-color: #fff;
       margin: 1rem;
-      // padding: 0 1rem;
+      padding: 0.5rem;
       width: 90%;
-      // height: 330px;
-      // box-shadow:
-      //   1px 1px 0 $text-main,
-      //   2px 2px 0 $text-main,
-      //   3px 3px 0 $text-main;
-      // border: 2px solid $text-main;
       border-radius: 0.5rem;
       transition:
         box-shadow 0.5s,
@@ -133,8 +128,13 @@
         max-width: 100%;
         width: 50%;
         box-sizing: border-box;
-        border-radius: 0.5rem;
-        border: 1px solid #aaa;
+        border-radius: 1rem;
+        border: 1.5px solid #222;
+        box-shadow:
+          1px 1px 0 var(--text-main),
+          2px 2px 0 var(--text-main),
+          3px 3px 0 var(--text-main),
+          3px 3px 3px 0px black;
       }
 
       h4 {
