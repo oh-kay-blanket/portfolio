@@ -4,6 +4,11 @@
 // VARIABLE SETUP
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800|Roboto|Montserrat+Alternates|Sacramento);
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
 body {
   margin: 0;
   font-size: 16px;
