@@ -210,12 +210,15 @@
       // Check if already loaded (cached)
       if (fullImage.complete && fullImage.naturalHeight !== 0) {
         fullImage.classList.add('loaded');
+        if (iso) iso.layout();
         return;
       }
 
       // Preload image
       fullImage.addEventListener('load', function () {
         fullImage.classList.add('loaded');
+        // Recalculate Isotope layout after image loads
+        if (iso) iso.layout();
       });
     });
   }

@@ -4,7 +4,6 @@
 .link-block {
   .img-wrapper {
     position: relative;
-    min-height: 370px;
     max-width: 100%;
     width: 50%;
     flex-shrink: 0;
@@ -12,6 +11,7 @@
     box-sizing: border-box;
     border-radius: 1rem;
     overflow: hidden;
+    display: flex;
 
     // Base 3D effect
     transform: perspective(1000px) rotateY(-26deg) rotateX(10deg);
@@ -30,17 +30,17 @@
       10px 9px 6px 0px rgba(0, 0, 0, 0.5);
 
     img {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
+      height: auto;
+      display: block;
       // border-radius: 1rem;
       box-shadow: none;
     }
 
     .img-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
       filter: blur(10px);
       opacity: 1;
       transition: opacity 0.4s ease-out;
@@ -48,6 +48,7 @@
     }
 
     .img-full {
+      position: relative;
       opacity: 0;
       transition: opacity 0.4s ease-out;
       z-index: 3;
