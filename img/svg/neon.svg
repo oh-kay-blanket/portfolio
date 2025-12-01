@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <!-- Neon text 'NEON' -->
-  <text x="50" y="100" font-family="Arial" font-size="40" stroke="#ed4a49" stroke-width="4" fill="#fcfaf4">NEON</text>
-  <!-- Glow effect (slightly blurred shadow) -->
-  <text x="50" y="100" font-family="Arial" font-size="40" stroke="#ed4a49" stroke-width="4" fill="none" opacity="0.4" filter="url(#blur)"/>
-</svg>

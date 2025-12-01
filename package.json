@@ -9,7 +9,9 @@
   "description": "Portfolio for Kayla Plunkett",
   "main": "index.html",
   "scripts": {
-    "scss": "sass --style=compressed css/sass/style.scss:css/style.css"
+    "scss": "sass --style=compressed css/sass/style.scss:css/style.css",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/oh-kay-blanket/portfolio/issues"
   },
-  "homepage": "https://github.com/oh-kay-blanket/portfolio#readme"
+  "homepage": "https://github.com/oh-kay-blanket/portfolio#readme",
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
 }
