@@ -33,7 +33,7 @@
           <h1 class="name">oh, kay blanket</h1>
           <!-- <h4 id="location">dallas, texas</h4> -->
           <p>
-            Hi, I'm Kayla Plunkett. I reside in Dallas, Texas. I find joy in crafting tools out of
+            Hi, I'm Kay Plunkett. I reside in Dallas, Texas. I find joy in crafting tools out of
             thin air, finding stories in the seemingly chaotic, and pssping cats. Here are some
             things I have made.
           </p>
@@ -118,7 +118,7 @@
     const separator = lines[0].includes('\t') ? '\t' : ',';
     const headers = lines[0].split(separator);
 
-    return lines.slice(1).map(line => {
+    return lines.slice(1).map((line) => {
       const values = separator === '\t' ? line.split('\t') : parseCSVLine(line);
       const project = {};
       headers.forEach((header, index) => {
@@ -132,7 +132,7 @@
   function renderProjects(projects) {
     const container = document.querySelector('.links-container');
 
-    projects.forEach(project => {
+    projects.forEach((project) => {
       const linkBlock = document.createElement('a');
       linkBlock.href = project.url;
       linkBlock.className = `link-block ${project.categories}`;
@@ -224,7 +224,7 @@
   }
 
   // Load projects when page loads
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     loadProjects();
   });
 </script>
