@@ -1,13 +1,13 @@
 id	title	url	description	tools	categories	image
-cryptic	learn cryptic	https://learncryptic.com	is a daily game to for people who want to learn about or get better at solving cryptic crossword clues.	react ui	code ui	cryptic.webp
-blood-lines	blood lines	https://oh-kay-blanket.github.io/blood-lines/	is a 3D visualizer for genealogical data. It allows users to upload GEDCOM files as well as explore some of my favorite family tree examples.	react d3	code viz	blood-lines.webp
+cryptic	learn cryptic	https://learncryptic.com	is a cryptic crossword game with 300+ active daily users.	react ui	code ui	cryptic.webp
+blood-lines	blood lines	https://oh-kay-blanket.github.io/blood-lines/	is a one-of-a-kind 3D visualizer for genealogical data.	react d3	code viz	blood-lines.webp
 snl-timeline	snl timeline	https://snl-timeline.ohkayblanket.com	is an interactive timeline of SNL seasons. It focus on the changing cast members, behind-the-scenes goings-on and public perception of SNL over the decades.	react gsap	code viz	snl-timeline.webp
-bills	trans rights tracker	https://transformationsproject.org/	is a trans rights legislation tracker I made for a non-profit group that tracks legislation targeting the transgender community in the US.	react d3	code ui viz	bills.webp
+bills	trans formations project	https://transformationsproject.org/	is a legislation tracker tool.	react d3	code ui viz	bills.webp
 soil	soil	https://oh-kay-blanket.github.io/soil/	is an interactive map of my travels around the world.	js google-maps-api	code viz	soil.webp
 drain	the drain	https://oh-kay-blanket.github.io/the-drain/	is a terminal-emulating game made in JavaScript.	js	code	drain.webp
 vinyl	vinyl	https://oh-kay-blanket.github.io/vinyl/	is a digital catalog of my vinyl record collection.	react	code ui viz	vinyl.webp
 music	...pay-shun	https://kaylaplunkett.bandcamp.com/album/pay-shun	is an album of original music I recorded between 2008 - 2013.	guitar computer vocals	art	music.webp
-moving-shadow	moving shadow	https://github.com/oh-kay-blanket/moving-shadow	is a CSS library for adding dynamic text-shadows. On mobile these respond to device orientation and on desktop to mouse position.	js css	code ui	moving-shadow.webp
+moving-shadow	moving shadow	https://www.npmjs.com/package/moving-shadow	is an NPM package for creating dynamic text-shadows.	js css	code ui	moving-shadow.webp
 adjective	adjective conjugator	https://oh-kay-blanket.github.io/adjective-conjugator/	is a dynamic adjective conjugator.	react	code	adjective.webp
 photography	photography	https://photos.app.goo.gl/YWCDTFEU5pg39hJT7	is a collection of some favorite sights I have captured.	canon	art	photography.webp
 neon	neon	https://github.com/oh-kay-blanket/css-neon-sign	is a CSS library for creating neon light effects.	css	ui	neon.webp
