@@ -11,7 +11,8 @@
   "scripts": {
     "scss": "sass --style=compressed css/sass/style.scss:css/style.css",
     "serve": "python3 -m http.server 8000",
-    "dev": "python3 -m http.server 8000"
+    "dev": "python3 -m http.server 8000",
+    "webp": "node -e \"const sharp=require('sharp'),path=require('path'),i=process.argv[1],n=path.parse(i).name;sharp('img/projects/tall/'+i).resize(500,1082).webp({quality:85}).toFile('img/projects/tall/'+n+'.webp').then(()=>console.log('Created: img/projects/tall/'+n+'.webp')).catch(e=>console.error(e.message))\""
   },
   "repository": {
     "type": "git",
