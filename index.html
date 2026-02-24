@@ -2,14 +2,17 @@
 <html>
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1STH8DQL9"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J1STH8DQL9"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
-      gtag('config', 'G-J1STH8DQL9');
+      gtag("js", new Date());
+      gtag("config", "G-J1STH8DQL9");
     </script>
     <meta charset="UTF-8" />
     <title>oh kay blanket</title>
@@ -30,12 +33,12 @@
       <div class="heading">
         <img class="logo" src="img/headshot-2025-10.jpg" />
         <div class="about">
-          <h1 class="name">kay plunkett</h1>
+          <h1 class="name">Hi, I'm Kay</h1>
           <!-- <h4 id="location">dallas, texas</h4> -->
           <p>
-            Hi, I'm Kay Plunkett. I reside in Dallas, Texas. I find joy in crafting tools out of
-            thin air, finding stories in the seemingly chaotic, and pssping cats. Here are some
-            things I have made.
+            I reside in Dallas, Texas. I find joy in crafting tools out of thin
+            air, finding stories in the seemingly chaotic, and pssping cats.
+            Here are some things I have made.
           </p>
           <div class="icons">
             <a href="mailto:kayla.lee.plunkett@gmail.com">
@@ -77,7 +80,7 @@
   // CSV Parser Functions
   function parseCSVLine(line) {
     const values = [];
-    let current = '';
+    let current = "";
     let inQuotes = false;
 
     for (let i = 0; i < line.length; i++) {
@@ -85,9 +88,9 @@
 
       if (char === '"') {
         inQuotes = !inQuotes;
-      } else if (char === ',' && !inQuotes) {
+      } else if (char === "," && !inQuotes) {
         values.push(current.trim());
-        current = '';
+        current = "";
       } else {
         current += char;
       }
@@ -98,16 +101,16 @@
   }
 
   function parseCSV(csv) {
-    const lines = csv.trim().split('\n');
+    const lines = csv.trim().split("\n");
     // Detect separator (comma or tab)
-    const separator = lines[0].includes('\t') ? '\t' : ',';
+    const separator = lines[0].includes("\t") ? "\t" : ",";
     const headers = lines[0].split(separator);
 
     return lines.slice(1).map((line) => {
-      const values = separator === '\t' ? line.split('\t') : parseCSVLine(line);
+      const values = separator === "\t" ? line.split("\t") : parseCSVLine(line);
       const project = {};
       headers.forEach((header, index) => {
-        project[header] = values[index] || '';
+        project[header] = values[index] || "";
       });
       return project;
     });
@@ -115,10 +118,10 @@
 
   // Render projects from CSV data
   function renderProjects(projects) {
-    const container = document.querySelector('.links-container');
+    const container = document.querySelector(".links-container");
 
     projects.forEach((project) => {
-      const linkBlock = document.createElement('a');
+      const linkBlock = document.createElement("a");
       linkBlock.href = project.url;
       linkBlock.className = `link-block ${project.categories}`;
 
@@ -148,35 +151,35 @@
 
   // Initialize Isotope
   function initIsotope() {
-    const grid = document.querySelector('.links-container');
+    const grid = document.querySelector(".links-container");
     iso = new Isotope(grid, {
-      itemSelector: '.link-block',
-      layoutMode: 'fitRows',
+      itemSelector: ".link-block",
+      layoutMode: "fitRows",
     });
   }
 
   // Load projects from CSV
   async function loadProjects() {
     try {
-      const response = await fetch('./projects.csv');
+      const response = await fetch("./projects.csv");
       const csvText = await response.text();
       const projects = parseCSV(csvText);
       renderProjects(projects);
       initImageLoading();
     } catch (error) {
-      console.error('Error loading projects:', error);
+      console.error("Error loading projects:", error);
     }
   }
 
   // Filter buttons
-  const filterButtons = document.querySelectorAll('#type-filter li');
+  const filterButtons = document.querySelectorAll("#type-filter li");
 
   filterButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener("click", function () {
       filterButtons.forEach(function (filBun) {
-        filBun.classList.remove('active');
+        filBun.classList.remove("active");
       });
-      btn.classList.add('active');
+      btn.classList.add("active");
       iso.arrange({ filter: btn.dataset.filter });
       // Re-check images after filter
       setTimeout(initImageLoading, 100);
@@ -185,23 +188,23 @@
 
   // Image blur-up loading
   function initImageLoading() {
-    const imageWrappers = document.querySelectorAll('.img-wrapper');
+    const imageWrappers = document.querySelectorAll(".img-wrapper");
 
     imageWrappers.forEach((wrapper) => {
-      const fullImage = wrapper.querySelector('.img-full');
+      const fullImage = wrapper.querySelector(".img-full");
 
       if (!fullImage) return;
 
       // Check if already loaded (cached)
       if (fullImage.complete && fullImage.naturalHeight !== 0) {
-        fullImage.classList.add('loaded');
+        fullImage.classList.add("loaded");
         if (iso) iso.layout();
         return;
       }
 
       // Preload image
-      fullImage.addEventListener('load', function () {
-        fullImage.classList.add('loaded');
+      fullImage.addEventListener("load", function () {
+        fullImage.classList.add("loaded");
         // Recalculate Isotope layout after image loads
         if (iso) iso.layout();
       });
@@ -209,7 +212,7 @@
   }
 
   // Load projects when page loads
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener("DOMContentLoaded", function () {
     loadProjects();
   });
 </script>
