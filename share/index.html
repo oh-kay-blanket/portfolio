@@ -6,40 +6,31 @@
     <meta name="theme-color" content="#e6e6ce" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../css/fontawesome/css/all.css" />
-    <link rel="icon" href="../img/logo.png" />
-    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../css/fontawesome/css/all.css"
+    />
+    <link rel="icon" href="../img/logo.png" type="image/svg+xml" />
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
   </head>
 
   <body>
     <div class="share">
       <img class="share__headshot" src="../img/headshot-2025-10.jpg" />
-      <h1 class="share__name">Kayla Plunkett</h1>
-      <p class="share__tagline">UI/UX Development</p>
+      <h1 class="share__name">Kay Plunkett</h1>
       <canvas id="qr-code"></canvas>
       <p class="share__url">ohkayblanket.com</p>
-      <div class="share__icons">
-        <a href="mailto:kayla.lee.plunkett@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/oh-kay-blanket">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kaylaleeplunkett/">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
     </div>
+
+    <script>
+      new QRious({
+        element: document.getElementById("qr-code"),
+        value: "https://ohkayblanket.com",
+        size: 200,
+        foreground: "#444444",
+        background: "#fcfaf4",
+      });
+    </script>
   </body>
 </html>
-
-<script>
-  QRCode.toCanvas(document.getElementById("qr-code"), "https://ohkayblanket.com", {
-    width: 200,
-    margin: 1,
-    color: {
-      dark: "#444444",
-      light: "#fcfaf4",
-    },
-  });
-</script>
