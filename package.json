@@ -6,7 +6,7 @@
   },
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio for Kayla Plunkett",
+  "description": "Portfolio for Kay Plunkett",
   "main": "index.html",
   "scripts": {
     "scss": "sass --style=compressed css/sass/style.scss:css/style.css",
