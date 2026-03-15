@@ -1,11 +1,11 @@
 id	title	url	description	tools	categories	image
 cryptic	learn cryptic	https://learncryptic.com	is a cryptic crossword game with 300+ active daily users.	react ui	code ui	cryptic.webp
 movie-title-translator	movie title translator	https://movie-title-translator.ohkayblanket.com/	is a language translator for movie titles. It relies on The Movie Database Open API.	react-native movie-database-api	react code	mtt.webp
-drain	the drain	https://oh-kay-blanket.github.io/the-drain/	is a terminal-emulating game made in JavaScript.	js	code	drain.webp
+drain	the drain	https://oh-kay-blanket.github.io/the-drain/	is a terminal-emulating game made in JavaScript.	react	code	drain.webp
 soil	soil	https://oh-kay-blanket.github.io/soil/	is an interactive map of my travels around the world.	js google-maps-api	code viz	soil.webp
-snl-timeline	snl timeline	https://snl-timeline.ohkayblanket.com	is an interactive timeline of SNL seasons. It focus on the changing cast members, behind-the-scenes goings-on and public perception of SNL over the decades.	react gsap	code viz	snl-timeline.webp
 blood-lines	blood lines	https://oh-kay-blanket.github.io/blood-lines/	is a one-of-a-kind 3D visualizer for genealogical data.	react d3	code viz	blood-lines.webp
-vinyl	vinyl	https://oh-kay-blanket.github.io/vinyl/	is a digital catalog of my vinyl record collection.	react	code ui viz	vinyl.webp
+vinyl	vinyl	https://oh-kay-blanket.github.io/vinyl/	is a digital catalog of my vinyl record collection.	react discogs-api	code ui viz	vinyl.webp
+snl-timeline	snl timeline	https://snl-timeline.ohkayblanket.com	is an interactive timeline of SNL seasons. It focus on the changing cast members, behind-the-scenes goings-on and public perception of SNL over the decades.	react gsap	code viz	snl-timeline.webp
 moving-shadow	moving shadow	https://www.npmjs.com/package/moving-shadow	is an NPM package for creating dynamic text-shadows.	js css	code ui	moving-shadow.webp
 music	...pay-shun	https://kaylaplunkett.bandcamp.com/album/pay-shun	is an album of original music I recorded between 2008 - 2013.	guitar computer vocals	art	music.webp
 photography	photography	https://photos.app.goo.gl/YWCDTFEU5pg39hJT7	is a collection of some favorite sights I have captured.	canon	art	photography.webp
@@ -15,3 +15,4 @@ art	visual art	https://photos.app.goo.gl/KcbvCxXMmMj1Qpr87	is a collection of vi
 hot-noise	go papago	https://kaylaplunkett.bandcamp.com/album/go-papago	is a 2012 EP by my band, Hot Noise.	guitar vocals	art	hot-noise.webp
 pulp	pulp	https://oh-kay-blanket.github.io/pulp/	is a catalog of every book I have read for pleasure.	react ui	code ui viz	pulp.webp
 dude	the dude abides	https://oh-kay-blanket.github.io/the-dude-abides/	is a video game inspired by The Big Lebowski and Twin Peaks. It was first JavaScript project I gave myself.	js canvas	code	dude.webp
+bills	trans formations project	https://transformationsproject.org/	is a legislation tracker tool.	react d3	code ui viz	bills.webp
