@@ -138,7 +138,7 @@
         <div class="link-block__header">
           <h4>${project.title}</h4>
           <p>${project.description}</p>
-          <p class="tools">${project.tools}</p>
+          <p class="tools">${project.tools.split(' ').map(tool => `<span>${tool}</span>`).join('')}</p>
         </div>
       `;
 

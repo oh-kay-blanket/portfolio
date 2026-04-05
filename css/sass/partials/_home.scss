@@ -164,11 +164,18 @@
 
       .tools {
         margin-top: 0.5rem;
-        letter-spacing: 1px;
-        color: $link;
-        opacity: 0.8;
-        font-weight: 800;
-        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+
+        span {
+          background-color: #e6e6ce;
+          padding: 0.25rem 0.5rem;
+          border-radius: 5px;
+          font-family: monospace;
+          font-size: 12px;
+          color: $link;
+        }
       }
     }
   }
