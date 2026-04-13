@@ -1,9 +1,9 @@
-@use '../abstracts/media' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/media" as *;
+@use "../abstracts/variables" as *;
 
 @font-face {
-  font-family: 'Despairs';
-  src: url('../fonts/despairs/despairs-font-trial.ttf');
+  font-family: "Despairs";
+  src: url("../fonts/despairs/despairs-font-trial.ttf");
 }
 
 .heading {
@@ -77,15 +77,16 @@
     z-index: 3;
     padding: 8px 0;
     background-color: $background;
+    box-shadow: 0 12px 1rem 6px var(--background);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('../img/noise.png');
+      background-image: url("../img/noise.png");
       opacity: 0.1;
       pointer-events: none;
       z-index: -1;
@@ -181,7 +182,7 @@
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .tools {
     opacity: 1 !important;
   }
